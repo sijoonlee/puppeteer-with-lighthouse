@@ -1,13 +1,11 @@
 {
-  "name": "puppeteer-measure-web-performance",
+  "name": "puppeteer-with-lighthouse",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
-    "lightuse": "node ./lighthouse.js",
-    "lh": "lighthouse http://google.com"
+    "start": "node ./index.js"
   },
   "author": "Sijoon Lee",
   "license": "ISC",
