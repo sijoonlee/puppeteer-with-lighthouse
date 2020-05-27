@@ -11,5 +11,5 @@ npm run start
 Or
 
 ```
-node ./command.js -a [http://example.com]
+node ./command.js -a http://example.com
 ```
