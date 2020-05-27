@@ -6,8 +6,7 @@ const puppeteer = require('puppeteer');
 const lighthouse = require('lighthouse');
 const {URL} = require('url');
 
-(async() => {
-  const url = 'https://ratehub.ca';
+const run = async (url = 'https://ratehub.ca') => {
 
   // Use Puppeteer to launch headful Chrome and don't use its default 800x600 viewport.
   const browser = await puppeteer.launch({
@@ -46,5 +45,8 @@ const {URL} = require('url');
       if(err !== null)
         return console.error(err);
   })
-})();
+};
 
+module.exports = {
+  run
+}
